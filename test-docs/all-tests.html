@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<!--
+    Viewport Compliance Test
+
+    @file all-tests.html
+    @author Rune Lillesveen <rune@opera.com>
+-->
+<html>
+    <head>
+        <title>Viewport Compliance Test / All tests</title>
+        <link rel="stylesheet" type="text/css" href="../css/result.css">
+	<style type="text/css">li { margin-top: 5px; }</style>
+        <script type="text/javascript" src="../scripts/framework.js"></script>
+        <script type="text/javascript" src="../scripts/testcases.js"></script>
+        <script type="text/javascript">
+            var testHelper = new ViewportTestHelper(viewportTests);
+            var testListHtml = testHelper.formatTestList();
+        </script>
+	<meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write(testListHtml);
+        </script>
+    </body>
+</html>

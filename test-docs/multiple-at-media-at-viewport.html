@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<!--
+    Viewport Compliance Test
+
+    @file viewport-test.html
+    @author Rune Lillesveen <rune@opera.com>
+    @author Oyvind Stenhaug <oyvinds@opera.com>
+-->
+<html>
+<head>
+    <title>Viewport Compliance Test / Multiple @media/@viewport Test</title>
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <style type="text/css">
+       @viewport {
+          width: 100px;
+       }
+       @media (min-width: 800px) {
+          @viewport {
+             width: 400px;
+          }
+       }
+       @media (max-width: 400px) {
+          @viewport {
+             width: 700px;
+          }
+       }
+    </style>
+    <script type="text/javascript" src="../scripts/framework.js"></script>
+    <script type="text/javascript" src="../scripts/testcases.js"></script>
+    <script type="text/javascript">
+        var testHelper = new ViewportTestHelper(viewportTests);
+        testHelper.initTest();
+    </script>
+</head>
+<body>
+    <!-- The &nbsp; below is hack for making Safari/iPhone pass the test.
+         Resolving initial-scale when unspecified is quite different for
+         documents without any content. -->
+    <div id="test-container">&nbsp;</div>
+</body>
+</html>

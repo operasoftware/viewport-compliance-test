@@ -1,0 +1,6 @@
+<FilesMatch "^mobdoc-http-vnd\.wap\.html.*">
+ForceType application/vnd.wap.xhtml+xml
+</FilesMatch>
+<FilesMatch "^mobdoc-http-wapforum\.xml.*">
+ForceType 'application/xhtml+xml;profile="http://www.wapforum.org/xhtml"'
+</FilesMatch>

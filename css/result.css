@@ -1,0 +1,17 @@
+/**
+ * Viewport Compliance Test / Result page stylesheet
+ *
+ * @file result.css
+ * @author Rune Lillesveen <rune@opera.com>
+ */
+
+@import url("common.css");
+
+body {
+    padding: 1em;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+.passrate {
+    font-size: 2em;
+}

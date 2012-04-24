@@ -1,0 +1,7 @@
+This is a compliance test suite for the @viewport rule and the viewport META
+tag as specified in the CSS Device Adaptation specification. See INSTALL for
+installation instructions. See LICENSE for a license for this test suite.
+
+DISCLAIMER: We do not claim that this test-suite is at any time in sync with
+any published version of the CSS Device Adaptation spec. Look here for tests
+officially approved by the CSSWG: http://test.csswg.org/

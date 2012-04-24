@@ -1,0 +1,55 @@
+/**
+ * Viewport Compliance Test / device-check stylesheet
+ *
+ * @file device-check.css
+ * @author Rune Lillesveen <rune@opera.com>
+ */
+
+@import url("test.css");
+
+/** Propagate initial font-family/size down to the test-container div. */
+body, html {
+    font-size: 1em !important;
+    font-family: inherit !important;
+}
+
+/** Reset the font from common.css. */
+#content {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+/** Element used to measure resolution in dpi. */
+#dpi-test {
+    position: absolute;
+    width: 72pt;
+}
+
+/** Element used to measure the initial em-size. */
+#em-test {
+    position: absolute;
+    width: 1em;
+}
+
+/** Element used to measure the initial ex-size. */
+#ex-test {
+    position: absolute;
+    width: 10ex;
+}
+
+/** For displaying results of the device check. */
+#device-result {
+    font-family: monospace;
+    border: 1px solid black;
+    text-align: left;
+    background-color: #eee;
+    padding: 5px;
+}
+
+/** For range inputs */
+input[type="text"] {
+    width: 4em;
+}
+input[type="text"]:disabled {
+    background-color: #ddd;
+}

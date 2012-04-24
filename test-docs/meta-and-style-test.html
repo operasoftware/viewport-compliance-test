@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<!--
+    Viewport Compliance Test
+
+    @file viewport-test.html
+    @author Rune Lillesveen <rune@opera.com>
+    @author Oyvind Stenhaug <oyvinds@opera.com>
+-->
+<html>
+<head>
+    <title>Viewport Compliance Test / Meta+Style Test</title>
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <style type="text/css">
+       @viewport {
+          width: device-width;
+          min-zoom: 3;
+          height: device-height;
+       }
+    </style>
+    <script type="text/javascript" src="../scripts/framework.js"></script>
+    <script type="text/javascript" src="../scripts/testcases.js"></script>
+    <script type="text/javascript">
+        var testHelper = new ViewportTestHelper(viewportTests);
+        testHelper.initTest();
+    </script>
+</head>
+<body>
+    <div id="test-container">&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/**
+ * Viewport Compliance Test / Common stylesheet
+ *
+ * @file common.css
+ * @author Rune Lillesveen <rune@opera.com>
+ */
+
+html {
+    background-color: white;
+    color: black;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+h1, h2 {
+    text-shadow: #aaa 0 0 5px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #cc0f16;
+    text-shadow: #aaa 1px 1px;
+}
+

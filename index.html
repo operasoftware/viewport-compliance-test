@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    Viewport Compliance Test - Start Page
+
+    @file index.html
+    @author Rune Lillesveen <rune@opera.com>
+-->
+<html>
+    <head>
+        <title>Viewport - Compliance Test</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <script type="text/javascript" src="scripts/framework.js"></script>
+        <script type="text/javascript">
+            window.onload = function() { document.getElementById("start").disabled = false; };
+        </script>
+	<meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <center>
+            <img src="images/opera-logo.png">
+            <h1>Viewport <br>Compliance Test</h1>
+			<noscript>Error: Javascript not enabled.</noscript>
+		</center>
+		<form action="test-docs/viewport-setup.html">
+			<fieldset>
+				<legend>Pixel ratio</legend>
+				<p>Default ratio of device pixels used per CSS pixel (in percent)
+				  for this browser:</p>
+				<p><input style="width: 3em; text-align: right" name="dpr">%</p>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Resolution</legend>
+				<p>Resolution (device pixels per inch):</p>
+				<p><input style="width: 3em; text-align: right" name="dpi"></p>
+			</fieldset>
+			<center>
+				<p><input id="start" type="submit" value="Start" disabled></p>
+				<p><a href="about.html">About</a></p>
+			</center>
+        </form>
+    </body>
+</html>

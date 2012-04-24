@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!--
+    Viewport Compliance Test
+
+    @file result.html
+    @author Rune Lillesveen <rune@opera.com>
+-->
+<html>
+    <head>
+        <title>Viewport Compliance Test / Test Results</title>
+        <link rel="stylesheet" type="text/css" href="../css/result.css">
+        <script type="text/javascript" src="../scripts/framework.js"></script>
+        <script type="text/javascript">
+            var testHelper = new ViewportTestHelper();
+            var resultHtml = testHelper.formatResults();
+        </script>
+	<meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <center>
+            <h1>Test finished</h1>
+            <script type="text/javascript">
+                document.write(resultHtml);
+            </script>
+	    <hr>
+	    <div>
+	      <a href="../index.html">Back to start page</a>
+	    </div>
+        </center>
+    </body>
+</html>

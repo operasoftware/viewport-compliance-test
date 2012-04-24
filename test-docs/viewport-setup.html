@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!--
+    Viewport Compliance Test
+
+    @file viewport-setup.html
+    @author Rune Lillesveen <rune@opera.com>
+    @author Oyvind Stenhaug <oyvinds@opera.com>
+-->
+<html>
+<head>
+    <title>Viewport Test Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/device-check.css">
+    <script type="text/javascript" src="../scripts/framework.js"></script>
+    <script type="text/javascript" src="../scripts/testcases.js"></script>
+    <script type="text/javascript">
+        var testHelper = new ViewportTestHelper(viewportTests);
+        var deviceObject = testHelper.getDeviceObject();
+        deviceObject.setup();
+
+        function useRange(ev) {
+            var checked = ev.target.checked;
+            document.getElementById("first").disabled = !checked;
+            document.getElementById("last").disabled = !checked;
+        }
+
+        function loadFirst() {
+    	    var first = undefined;
+            var last = undefined;
+            if (document.getElementById("range").checked) {
+                first = parseInt(document.getElementById("first").value);
+                last = parseInt(document.getElementById("last").value);
+            }
+    	    testHelper.loadFirst(first, last);
+        }
+    </script>
+</head>
+<body>
+    <div id="test-container">&nbsp;
+        <div id="content" style="display: none">
+            <center>
+                <h2>Viewport Compliance Test</h2>
+                <pre id="device-result">ERROR</pre>
+                <p>Check that the values above are correct and click "Continue" to start testing.</p>
+                <input type="button" disabled="true" id="cont-button" value="Continue" onclick="loadFirst();"></input>
+                <div><input type="checkbox" id="range" onclick="useRange(event);">Use range:</div>
+                <div>First: <input disabled type="text" id="first"></div>
+                <div>Last: <input disabled type="text" id="last"></div>
+                <p><a href="javascript:testHelper.loadTestList();">Browse single tests</a></p>
+            </center>
+        </div>
+        <div id="em-test"></div>
+        <div id="ex-test"></div>
+    </div>
+</body>
+</html>

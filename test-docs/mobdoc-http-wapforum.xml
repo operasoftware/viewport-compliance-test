@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!--
+    Viewport Compliance Test
+
+    @file mobdoc-http-wapforum.xml
+    @author Rune Lillesveen <rune@opera.com>
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Viewport Compliance Test / wapforum mime-type</title>
+        <link rel="stylesheet" type="text/css" href="../css/test.css" />
+        <script type="text/javascript" src="../scripts/framework.js" />
+        <script type="text/javascript" src="../scripts/testcases.js" />
+        <script type="text/javascript">
+            <![CDATA[
+		var testHelper = new ViewportTestHelper(viewportTests);
+		testHelper.initTest();
+            ]]>
+        </script>
+    </head>
+    <body>
+	<div id="test-container">
+	    <div id="dpi-test"></div>
+	    <div id="content">
+		<center>
+		    <h2>Viewport Compliance Test</h2>
+		    <br />
+		    <h3>In progress ...</h3>
+		</center>
+	    </div>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+These tests can be run both from file and from an Apache web server.
+
+From file, simply put the files on your disk, keeping the directory
+structure and load the index.html file in the browser to test.
+
+There are some tests which rely on a mimetype http header to be
+provided. Those tests will be skipped when run from file.
+
+To run the tests from an Apache server, copy the files to a directory
+that is available from your web server, keeping the directory structure
+intact. This compliance test contains .htaccess file(s) configured
+to provide certain mimetypes with the test files. This requires that
+you have made overrides in the test directories using "AllowOverride
+all".
+
+If you are going to test a prefixed implementation of @viewport,
+run the prefix.py script.
